@@ -4,7 +4,7 @@ Donate link: http://clickwp.com/make-a-payment/
 Tags: grab box, click to copy, copy, clipboard, widget
 Requires at least: 3.
 Tested up to: 3.5
-Stable tag: 0.1
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,7 @@ If your theme doesn't offer custom CSS, you can try these plugins:
 * [My Custom CSS](http://wordpress.org/extend/plugins/my-custom-css/)
 * [Jetpack](http://jetpack.me) comes with a [custom CSS module](http://jetpack.me/support/custom-css/)
 
+
 = What is my image URL? =
 
 Your image must first be uploaded to your blog or a picture hosting service like [Photobucket](http://photobucket.com). Find the direct link to the image (you will see a `.jpg`, `.gif` or `.png` at the end of the URL).
@@ -53,11 +54,30 @@ Add the following CSS to your theme.
 		height: auto;
 	} 
 
+= How can I center the image =
+
+Add the following CSS to your theme.
+
+	.click-grab-box-button {
+		text-align: center;
+	}
+
+
 == Screenshots ==
 
-Coming soon!
+1. The plugin adds a widget that makes it easy to display a grab box in your sidebar.
+
+2. Visitors can click the Copy Code button to copy the content of the textarea easily.
+
+3. The widget is lightly styled so you can customize it to your liking.
+
+
 
 == Changelog ==
 
 = 0.1 =
 * Initial release on Github
+
+= 0.1.1 =
+* Minor corrections, added help text
+* Added screenshots

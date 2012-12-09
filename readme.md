@@ -34,3 +34,10 @@ Add the following CSS to your theme.
 		max-width: 100%;
 		height: auto;
 	} 
+	
+**How can I center the image**  
+Add the following CSS to your theme.
+
+	.click-grab-box-button {
+		text-align: center;
+	}

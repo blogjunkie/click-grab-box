@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Blog Button Grab Box Widget
+Plugin Name: Click to Copy Grab Box Widget
 Plugin URI: http://clickwp.com/
 Description: This plugin lets you display a grab box for your blog badge in a sidebar. Your readers can click a button to copy the code to their clipboard and paste it into their blog template.
-Version: 0.1
+Version: 0.1.1
 Author: ClickWP
 Author URI: http://clickwp.com
 License:
@@ -66,11 +66,13 @@ class click_grab_box extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('button_img'); ?>"><?php _e('URL to image', 'click_grab_box'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('button_img'); ?>" name="<?php echo $this->get_field_name('button_img'); ?>" type="text" value="<?php echo $button_img; ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id('button_img'); ?>" name="<?php echo $this->get_field_name('button_img'); ?>" type="text" value="<?php echo $button_img; ?>" /><br/>
+			<small>Must include <code>http://</code></small>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('button_link'); ?>"><?php _e('Image Link', 'click_grab_box'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('button_link'); ?>" name="<?php echo $this->get_field_name('button_link'); ?>" type="text" value="<?php echo $button_link; ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id('button_link'); ?>" name="<?php echo $this->get_field_name('button_link'); ?>" type="text" value="<?php echo $button_link; ?>" /><br/>
+			<small>Must include <code>http://</code></small>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('copy_text'); ?>"><?php _e('Copy button text', 'click_grab_box'); ?></label>
