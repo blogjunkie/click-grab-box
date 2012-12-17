@@ -12,7 +12,7 @@ Displays a grab box with a click to copy button
 
 == Description ==
 
-Click to Copy Grab Box makes it easy to generate code for your blog button. The plugin adds a widget to WordPress that will display a textarea with code for your readers to copy and paste into their blogs. The widget will even automatically generate the correct code for you. Simply will out the fields in the widget and click Save.
+Click to Copy Grab Box makes it easy to generate code for your blog button. The plugin adds a widget to WordPress that will display a textarea with code for your readers to copy and paste into their blogs. The widget will even automatically generate the correct code for you. Simply fill out the fields in the widget and click Save.
 
 **Features**
 
