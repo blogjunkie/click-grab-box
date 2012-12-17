@@ -3,7 +3,7 @@
 Plugin Name: Click to Copy Grab Box Widget
 Plugin URI: http://clickwp.com/
 Description: This plugin lets you display a grab box for your blog badge in a sidebar. Your readers can click a button to copy the code to their clipboard and paste it into their blog template.
-Version: 0.1.1
+Version: 0.1.2
 Author: ClickWP
 Author URI: http://clickwp.com
 License:
@@ -146,7 +146,9 @@ class click_grab_box extends WP_Widget {
 			?>
 			<textarea class="click-grab-box-code"><?php echo esc_html($button_output); ?></textarea>
 			<input class="click-grab-box-copy" type="submit" value="<?php echo $copy_text; ?>" />
-			<div class="click-grab-box-description"><?php echo $instructions; ?></div>
+			<?php if ( $instructions ) 
+				echo '<div class="click-grab-box-description">'. $instructions .'</div>';
+			?>
 		<?php
 		echo '</div>';
 		
@@ -158,8 +160,7 @@ class click_grab_box extends WP_Widget {
 	 */	
 	public function register_admin_scripts() {
 
-		// TODO:	Change 'plugin-name' to the name of your plugin
-		wp_enqueue_script( 'cgb-showhide', plugins_url( 'click-grab-box/js/admin.js' ) );
+	//	wp_enqueue_script( 'cgb-showhide', plugins_url( 'click-grab-box/js/admin.js' ) );
 
 	}
 	
@@ -181,7 +182,7 @@ function click_grab_box_scripts_styles() {
 		'click-grab-box', 
 		plugins_url( 'lib/style.css', __FILE__),
 		array(),
-		'0.1'
+		'0.1.2'
 	);
 }
 add_action('wp_enqueue_scripts', 'click_grab_box_scripts_styles');

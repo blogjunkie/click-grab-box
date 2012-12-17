@@ -2,9 +2,9 @@
 Contributors: blogjunkie
 Donate link: http://clickwp.com/make-a-payment/
 Tags: grab box, click to copy, copy, clipboard, widget
-Requires at least: 3.
+Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
